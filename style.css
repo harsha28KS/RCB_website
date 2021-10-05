@@ -1,0 +1,134 @@
+
+/* navbar  */
+.navbar-brand {
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* carousel  */
+.carousel {
+    width: 100%;
+    margin: auto;
+}
+
+.carousel-item img {
+    height: 300px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 5px;
+}
+
+/* main section  */
+
+.main-text {
+    animation: t1 2s infinite alternate;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Acme', sans-serif;
+    font-size: 60px;
+}
+
+@keyframes t1 {
+    from {
+        color: black;
+    }
+
+    to {
+        color: red;
+    }
+}
+
+.main-text span {
+    color: crimson;
+    animation: t2 2s infinite alternate;
+}
+
+@keyframes t2 {
+    from {
+        color: red;
+    }
+
+    to {
+        color: black;
+    }
+}
+
+.card {
+    min-width: 23%;
+    margin: 0 0 25px 0;
+    border: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color:white;
+}
+
+.card-image {
+    height: 240px;
+    background: url(./assets/player_bg.jpg);
+    background-size: cover;
+}
+
+.edit_delete_icons {
+    top: 5px;
+    right: 5px;
+}
+
+.card-title {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.badge {
+    font-family: 'Poppins', sans-serif;
+}
+
+.stats-content {
+    font-size: 10px;
+    line-height: 0.75;
+}
+
+footer{
+    color:white;
+}
+
+
+@media (min-width: 768px) {
+    /* navbar */
+    .navbar-brand {
+        font-size: 35px;
+    }
+
+    /* carousel */
+    .carousel {
+        width: 90%;
+    }
+
+    .carousel-item img {
+        height: 560px;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 40px;
+        height: 10px;
+    }
+
+    /* main section */
+    .main-text {
+        font-size: 80px;
+    }
+
+    .add_player_button {
+        font-size: 17px;
+    }
+}
